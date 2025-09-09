@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  font-family: "Inter", sans-serif;
+}
+/* index.css */
+/* Custom text colors */
+.text-primary {
+  color: #6a0066;
+}
+.text-secondary {
+  color: #934790;
+}
+
+/* Optional: hover effects for links */
+a:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.primary{
+  background-color: rgb(43, 60, 43);
+}
+.border-secondary{
+  border-color: #934790;
+}
+button {
+  background-color: #934790;
+  color: white;
+  padding: 10px 26px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6a0066;
+  transition: 0.3s;
+}
