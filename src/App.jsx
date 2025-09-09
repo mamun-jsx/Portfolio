@@ -10,7 +10,7 @@ const App = () => {
     <>
       <section>
         <Nav />
-        <main className="max-w-7xl mx-auto  md:px-0 p-1 h-screen">
+        <main className="max-w-7xl mx-auto px-2   md:px-0 h-screen">
           <HeroSection />
           {/* About  */}
           <AboutMe />

@@ -5,7 +5,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 const Nav = () => {
   return (
     <nav className="w-full bg-gray-50 md:py-2 z-50 ">
-      <div className=" mx-auto flex justify-between items-center px-5 lg:px-8 xl:px-[8%] h-10 md:h-16">
+      <div className=" max-w-7xl mx-auto flex justify-between items-center px-5  h-10 md:h-16">
         {/* Logo */}
         <div>
           <a href="#top" className="text-2xl font-bold text-primary">

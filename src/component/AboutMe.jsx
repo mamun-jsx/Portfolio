@@ -8,82 +8,65 @@ import { FaCode } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
 import { FaMedal } from "react-icons/fa";
 
-import { assets } from "../assets/assets";
+import { aboutInfo, assets } from "../assets/assets";
 const AboutMe = () => {
   return (
-    <section id="about" className="my-10 px-2 md:px-0">
-      {/* Title  */}
-      <h2 className="text-center py-10 text-2xl font-medium text-secondary ">
-        About Me...
-      </h2>
-
-      {/* main content  */}
-      <main className="">
-        {/* left*/}
-        <div className="wrapper flex items-center gap-4 justify-between">
-          {/* card area */}{" "}
-          <div className="left flex-1 content">
-            <p className="text-gray-500 py-2 ">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-              aspernatur laudantium sed iusto voluptatum non esse molestiae ad
-              quod ex omnis, nisi exercitationem facilis illum maxime temporibus
-              debitis perspiciatis accusantium aut suscipit eos? Culpa
-              consectetur dicta distinctio ipsa adipisci? Amet commodi nisi,
-              accusamus corporis voluptatum nihil assumenda ea aperiam. Eaque!
-            </p>
-            <div className="my-5 cardWrapper ">
-              <aside className="card-1 border border-secondary my-3 shadow-md rounded-2xl p-4">
-                <h2 className="text-5xl my-2 text-orange-500 ">
-                  <FaCode />
-                </h2>
-                <h5 className="mt-3 text-xl">Language : </h5>
-                <p className="text-gray-500 mt-2">
-                  HTML, CSS, JavaScript and TypeScript
-                </p>
-              </aside>
-              <aside className="card-2 border border-secondary my-3 shadow-md rounded-2xl p-4">
-                <h2 className="text-5xl my-2 text-black ">
-                  <FaUserGraduate />
-                </h2>
-                <h5 className="mt-3 text-xl">Education : </h5>
-                <p className="text-gray-500 mt-2">
-                  Complete BA in english language and literature.{" "}
-                </p>
-                <p className="text-primary">secondary language English </p>
-              </aside>
-              <aside className="card-3 border border-secondary my-3 shadow-md rounded-2xl p-4">
-                <h2 className="text-5xl my-2 text-yellow-500 ">
-                  <FaMedal />
-                </h2>
-                <h5 className="mt-3 text-xl">Achievement : </h5>
-                <p className="text-gray-500 mt-2">
-                  complete 4-5 project and also I am level 1 se;;er in fiver and
-                  also I have a good review complete frontend course from
-                  programming hero and certificate
-                </p>
-              </aside>
-            </div>
-
-            <div className="tools my-5 md:my-0">
-              <p className="text-xl  my-2">Tools: I use </p>
-              <div className="flex gap-5 ">
-                <VscVscode className="inline text-7xl text-blue-500" />
-                <IoLogoFirebase className="inline text-7xl text-yellow-500" />
-                <SiMongoose className="inline text-7xl text-green-500" />
-                <AiFillOpenAI className="inline text-7xl text-black" />
-                <FaGithub className="inline text-7xl text-black" />
-              </div>
-            </div>
-          </div>
-          <div className="right side">
-            <img
-              className="rounded-full border-b-4 drop-shadow-2xl border-purple-600"
-              src={assets.myPhoto}
-              alt=""
-            />
-          </div>
+    <section id="about" className="w-full scroll-mt-20 py-10">
+      <h4 className="text-center mb-2 text-lg">Introduction</h4>
+      <h2 className="text-center text-5xl font-semibold ">About Me</h2>
+      <div
+        className="flex w-full 
+       flex-col md:flex-row items-center gap-20 my-20"
+      >
+        {/* left column  */}
+        <div className="w-64 sm:w-80 rounded-full max-w-none">
+          <img className="w-full rounded-full" src={assets.myPhoto} alt="" />
         </div>
-      </main>
+        {/* right column  */}
+        <div className="flex-1">
+          <p className="mb-10 max-w-2xl ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            dolore fuga similique placeat laboriosam at, ipsam itaque amet
+            veritatis eos quod laborum dolor asperiores. Enim animi vel pariatur
+            quibusdam possimus?
+          </p>
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl">
+            {aboutInfo.map((info) => {
+              return (
+                <li
+                  className="border border-gray-400 rounded-xl p-6 "
+                  key={info.id}
+                >
+                  <div>
+                    {info.icon === "education" && (
+                      <FaUserGraduate className="inline-block text-4xl mr-2 mb-1" />
+                    )}
+                    {info.icon === "experience" && (
+                      <FaMedal className="inline-block text-4xl mr-2 mb-1" />
+                    )}
+                    {info.icon === "skills" && (
+                      <FaCode className="inline-block text-4xl mr-2 mb-1" />
+                    )}
+                  </div>
+                  <h3 className="my-4 font-semibold text-secondary">
+                    {info?.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{info?.desc}</p>
+                </li>
+              );
+            })}
+          </ul>
+          {/* Tools I use  */}
+          <h4 className="text-gray-700 text-xl my-6">Tools I use</h4>
+          <ul className="flex items-center gap-3 sm:gap-2 ">
+            <VscVscode className="text-7xl text-blue-600" />{" "}
+            <IoLogoFirebase className="text-7xl text-yellow-500" />{" "}
+            <AiFillOpenAI className="text-7xl text-gray-600" />{" "}
+            <FaGithub className="text-7xl text-black-600" />
+            <SiMongoose className="text-8xl text-red-800 " />
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
