@@ -21,7 +21,9 @@ const HeroSection = () => {
           Available for remote work in any location with any time zone. My
           current location dhaka, Bangladesh.
         </p>
-        <button>Download CV</button>
+        <button onClick={() => window.open(assets.CV, "_blank")}>
+          Download CV
+        </button>
       </main>
     </section>
   );
