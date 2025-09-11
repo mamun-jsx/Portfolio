@@ -11,7 +11,7 @@ import { FaMedal } from "react-icons/fa";
 import { aboutInfo, assets } from "../assets/assets";
 const AboutMe = () => {
   return (
-    <section id="about" className="w-full scroll-mt-20 py-10">
+    <section id="about" className="w-full bg-gray-50 scroll-mt-20 py-10">
       <h4 className="text-center mb-2 text-lg">Introduction</h4>
       <h2 className="text-center text-5xl font-semibold ">About Me</h2>
       <div
@@ -20,15 +20,25 @@ const AboutMe = () => {
       >
         {/* left column  */}
         <div className="w-64 sm:w-80 rounded-full max-w-none">
-          <img className="w-full rounded-full" src={assets.myPhoto} alt="" />
+          <img
+            className="w-full border-b-2 rounded-full"
+            src={assets.myPhoto}
+            alt=""
+          />
         </div>
         {/* right column  */}
         <div className="flex-1">
           <p className="mb-10 max-w-2xl ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            dolore fuga similique placeat laboriosam at, ipsam itaque amet
-            veritatis eos quod laborum dolor asperiores. Enim animi vel pariatur
-            quibusdam possimus?
+            I am a skilled MERN Stack Developer with strong expertise in
+            React.js, Node.js, and MongoDB, capable of building scalable and
+            user-friendly web applications. Alongside my development skills, I
+            bring over 2 years of professional experience on Fiverr, where I
+            worked as a WordPress Website Designer, successfully designing and
+            delivering 20+ websites for clients worldwide. My dedication and
+            quality of work helped me achieve the Level 1 Seller badge on the
+            platform. Combining my technical development knowledge with design
+            experience, I bring a unique balance of creativity and functionality
+            to every project I work on.
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl">
             {aboutInfo.map((info) => {

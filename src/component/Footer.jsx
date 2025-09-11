@@ -5,29 +5,39 @@ import { CiFacebook } from "react-icons/ci";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 const Footer = () => {
   const socialMedia = [
-    { id: 1, icon: <FaWhatsapp />, link: "" },
+    {
+      id: 1,
+      icon: <FaWhatsapp />,
+      link: "https://api.whatsapp.com/message/WQSVX5CH3VGNC1?autoload=1&app_absent=0",
+    },
     {
       id: 2,
       icon: <CiFacebook />,
-      link: "",
+      link: "https://www.facebook.com/mamunthegreat",
     },
     {
       id: 3,
       icon: <CiLinkedin />,
-      link: "",
+      link: "https://www.linkedin.com/in/mamun-js/",
     },
     {
       id: 4,
       icon: <FaInstagram />,
-      link: "",
+      link: "https://www.instagram.com/lord_mamun/",
     },
     {
       id: 5,
       icon: <FaGithub />,
-      link: "",
+      link: "https://github.com/mamun-jsx",
+    },
+    {
+      id: "top",
+      icon: <FaArrowUp />,
+      link: "#top",
     },
   ];
   return (
@@ -42,7 +52,7 @@ const Footer = () => {
               return (
                 <li key={social.id}>
                   <a
-                    className="text-2xl text-gray-600 hover:text-gray-800"
+                    className="text-3xl font-bold text-black hover:text-[#6a0066]"
                     href={social.link}
                     target="_blank"
                     rel="noopener noreferrer"

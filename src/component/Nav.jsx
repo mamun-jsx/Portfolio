@@ -4,7 +4,7 @@ import { TbBrandFiverr } from "react-icons/tb";
 
 const Nav = () => {
   return (
-    <nav className="w-full bg-gray-50 md:py-2 z-50 ">
+    <nav id="#top" className="w-full bg-gray-50 md:py-2 z-50 ">
       <div className=" max-w-7xl mx-auto flex justify-between items-center px-5  h-10 md:h-16">
         {/* Logo */}
         <div>
@@ -41,10 +41,10 @@ const Nav = () => {
           </li>
           <li>
             <a
-              href="#contact"
+              href="#skill"
               className="text-primary hover:text-secondary transition"
             >
-              Contact
+              Skill
             </a>
           </li>
         </ul>
@@ -55,7 +55,7 @@ const Nav = () => {
           <ul className="flex gap-3">
             <li>
               <a
-                href="https://www.upwork.com/your-profile"
+                href="https://www.upwork.com/freelancers/~0128c27e26d30e1643"
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary hover:text-secondary transition text-2xl"
@@ -65,7 +65,7 @@ const Nav = () => {
             </li>
             <li>
               <a
-                href="https://www.fiverr.com/your-profile"
+                href="https://www.fiverr.com/free_mamun/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-primary hover:text-secondary transition text-2xl"
