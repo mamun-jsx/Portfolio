@@ -10,16 +10,15 @@ const App = () => {
     <>
       <section>
         <Nav />
-        <main className="max-w-7xl mx-auto px-2   md:px-0 h-screen">
-          <HeroSection />
-          {/* About  */}
-          <AboutMe />
-          {/* Projects */}
-          <Projects />
-          {/* Skilled and Education  */}
-          <Skill />
-          <Footer />
-        </main>
+
+        <HeroSection />
+        {/* About  */}
+        <AboutMe />
+        {/* Projects */}
+        <Projects />
+        {/* Skilled and Education  */}
+        <Skill />
+        <Footer />
       </section>
     </>
   );
