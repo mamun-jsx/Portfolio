@@ -71,7 +71,7 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="my-12 py-20 rounded px-4 md:px-10 bg-gray-50 "
+      className="my-12 py-20 rounded px-4 md:px-10 bg-gray-50"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
@@ -79,17 +79,13 @@ const Skill = () => {
         </h1>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-4 mb-8">
+        <div className="flex justify-center overflow-x-auto flex-nowrap gap-3 sm:gap-4 mb-8 scrollbar-hide">
           {skills.map((skill) => (
             <button
               key={skill.id}
               onClick={() => setActiveTab(skill.name)}
-              className={`px-5 py-2  font-semibold transition 
-                ${
-                  activeTab === skill.name
-                    ? "bg-blue-600 text-white shadow-lg"
-                    : "bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                }`}
+              className={`px-5 py-2 font-semibold rounded-md transition whitespace-nowrap
+              ${activeTab === skill.name ? "brightness-100" : "animate-pulse"}`}
             >
               {skill.name}
             </button>
@@ -103,10 +99,10 @@ const Skill = () => {
             ?.items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center p-5 bg-white  rounded-2xl shadow-md hover:shadow-xl transition"
+                className="flex flex-col items-center justify-center p-5 bg-white rounded-2xl shadow-md hover:shadow-xl transition"
               >
                 <div className="text-4xl mb-3">{item.icon}</div>
-                <p className="text-sm font-medium text-gray-700 ">
+                <p className="text-sm font-medium text-gray-700">
                   {item.label}
                 </p>
               </div>
