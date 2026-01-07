@@ -22,8 +22,9 @@ const Footer = () => {
     {
       id: 3,
       icon: <CiLinkedin />,
-      link: "https://www.linkedin.com/in/mamun-js/",
+      link: "https://www.linkedin.com/in/mamun-jsx/",
     },
+   
     {
       id: 4,
       icon: <FaInstagram />,
