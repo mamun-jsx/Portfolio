@@ -1,4 +1,3 @@
-
 import React from "react";
 import { VscVscode } from "react-icons/vsc";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -35,16 +34,9 @@ const AboutMe = () => {
         {/* right column */}
         <div className="flex-1 w-full">
           <p className="mb-10 max-w-2xl">
-            I am a skilled MERN Stack Developer with strong expertise in
-            React.js, Node.js, and MongoDB, capable of building scalable and
-            user-friendly web applications. Alongside my development skills, I
-            bring over 2 years of professional experience on Fiverr, where I
-            worked as a WordPress Website Designer, successfully designing and
-            delivering 20+ websites for clients worldwide. My dedication and
-            quality of work helped me achieve the Level 1 Seller badge on the
-            platform. Combining my technical development knowledge with design
-            experience, I bring a unique balance of creativity and functionality
-            to every project I work on.
+            I am a skilled MERN & PERN Stack Developer with strong expertise in
+            React.js, Node.js, and MongoDB,Postgresql capable of building
+            scalable and user-friendly web applications.
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

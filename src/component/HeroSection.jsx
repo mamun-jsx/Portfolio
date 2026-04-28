@@ -15,7 +15,7 @@ const HeroSection = () => {
         </h3>
 
         <h2 className="md:text-7xl text-3xl text-center md:leading-20  font-light mb-4">
-          Fronted web developer <br /> React and Node
+          MERN & PERN stack developer
         </h2>
         <p className="max-w-2xl text-gray-500 p-1 md:p-0 text-sm text-center md:text-base mb-6">
           Available for remote work in any location with any time zone. My
