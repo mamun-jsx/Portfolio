@@ -1,46 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 
-::-webkit-scrollbar {
-  display: none;
-  overflow: hidden;
+@theme {
+  --color-surface: #111317;
+  --color-surface-dim: #111317;
+  --color-surface-bright: #37393e;
+  --color-accent: #FF7A5F;
+  --color-primary: #FF7A5F;
+  
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  background-color: var(--color-surface);
+  color: #ffffff;
   margin: 0;
-  padding: 0;
-  background-color: #f9fafb; /* Tailwind gray-50 */
-  font-family: "Inter", sans-serif;
-}
-/* index.css */
-/* Custom text colors */
-.text-primary {
-  color: #6a0066;
-}
-.text-secondary {
-  color: #934790;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Optional: hover effects for links */
-a:hover {
-  opacity: 0.8;
-  transition: 0.3s;
+::-webkit-scrollbar {
+  display: none;
 }
-.primary{
-  background-color: rgb(43, 60, 43);
+
+.hero-gradient {
+  background: radial-gradient(circle at 75% 50%, rgba(255, 122, 95, 0.15) 0%, rgba(17, 19, 23, 1) 70%);
 }
-.border-secondary{
-  border-color: #934790;
+
+.name-line {
+  width: 100px;
+  height: 2px;
+  background-color: var(--color-accent);
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1rem;
 }
-button {
-  background-color: #934790;
-  color: white;
-  padding: 10px 26px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  cursor: pointer;
+
+.portrait-mask {
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
 }
-button:hover {
-  background-color: #6a0066;
-  transition: 0.3s;
+
+@keyframes spin-slow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+/* Custom vertical line styling for the timeline effect */
+.timeline-line {
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent) 0%, var(--color-accent) 100%);
+  opacity: 0.6;
+}
+
+.timeline-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  33% { transform: translate(10px, -10px) rotate(5deg); }
+  66% { transform: translate(-5px, 15px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

@@ -6,12 +6,13 @@ import ProjectCard from "./ProjectCard";
 const Projects = () => {
   return (
     <section id="portfolio" className="my-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 className="my-10 text-primary text-3xl md:text-5xl text-center">
+      <h2 className="my-10 text-accent text-3xl md:text-5xl text-center font-extrabold tracking-tight">
         Projects I have done..
       </h2>
-      <p className="text-center mb-9 text-base sm:text-lg max-w-2xl mx-auto">
-        Some projects are MERN Stack and some are WordPress based. WordPress
-        projects were completed for Fiverr clients.
+      <p className="text-center mb-9 text-base sm:text-lg max-w-3xl mx-auto text-gray-400">
+        I have built WordPress sites for my Fiverr clients and personal projects
+        using modern frameworks. I have utilized both relational and non-relational
+        databases across several of these projects.
       </p>
 
       <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

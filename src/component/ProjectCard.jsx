@@ -5,7 +5,7 @@ import { FaWordpress } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="card bg-base-100 shadow-md hover:shadow-lg transition-shadow">
+    <div className="card bg-surface-bright/20 border border-white/5 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow rounded-2xl overflow-hidden">
       <figure className="overflow-hidden">
         <img
           src={project.imageUrl}
@@ -14,8 +14,8 @@ const ProjectCard = ({ project }) => {
         />
       </figure>
       <div className="card-body p-4">
-        <h2 className="card-title text-lg sm:text-xl">{project.name}</h2>
-        <p className="text-gray-600 text-sm sm:text-base">
+        <h2 className="card-title text-lg sm:text-xl text-white font-bold">{project.name}</h2>
+        <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
           {project.description}
         </p>
 
@@ -24,36 +24,64 @@ const ProjectCard = ({ project }) => {
           {project?.liveLink && (
             <button
               onClick={() => window.open(project?.liveLink, "_blank")}
-              className="px-4 py-2 bg-primary text-white rounded-md hover:opacity-90 transition"
+              className="px-4 py-2 bg-accent text-white font-semibold rounded-md hover:opacity-90 transition"
             >
               Live Link
             </button>
           )}
 
-          {/* Repo / WordPress / Private */}
-          <span className="flex items-center gap-2 text-gray-700">
-            {project?.repoLink ? (
+          {/* Repo Links / WordPress / Private */}
+          <div className="flex flex-col sm:flex-row gap-3 mt-2 sm:mt-0 text-gray-400">
+            {project?.frontendRepo && (
               <a
-                href={project?.repoLink}
+                href={project.frontendRepo}
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-2 hover:text-primary"
+                className="flex items-center gap-2 hover:text-accent transition"
               >
-                <FaGithub className="text-2xl" />
+                <FaGithub className="text-xl" />
+                Frontend
+              </a>
+            )}
+            
+            {project?.backendRepo && (
+              <a
+                href={project.backendRepo}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition"
+              >
+                <FaGithub className="text-xl" />
+                Backend
+              </a>
+            )}
+            
+            {!project?.frontendRepo && !project?.backendRepo && project?.repoLink && (
+              <a
+                href={project.repoLink}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 hover:text-accent transition"
+              >
+                <FaGithub className="text-xl" />
                 Repo Link
               </a>
-            ) : project?.type === "wordpress" ? (
+            )}
+
+            {!project?.frontendRepo && !project?.backendRepo && !project?.repoLink && project?.type === "wordpress" && (
               <span className="flex items-center gap-2">
-                <FaWordpress className="text-2xl text-blue-600" />
+                <FaWordpress className="text-xl text-accent" />
                 WordPress Project
               </span>
-            ) : (
-              <span className="flex items-center gap-2">
-                <RiGitRepositoryPrivateFill className="text-2xl text-red-600" />
+            )}
+
+            {!project?.frontendRepo && !project?.backendRepo && !project?.repoLink && project?.type !== "wordpress" && (
+              <span className="flex items-center gap-2 text-gray-400">
+                <RiGitRepositoryPrivateFill className="text-xl text-accent" />
                 Private Repo
               </span>
             )}
-          </span>
+          </div>
         </div>
       </div>
     </div>

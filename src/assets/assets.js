@@ -10,7 +10,7 @@ import aiPoweredBlog from "./AiPoweredBlog.png";
 import digitalProductWebsite from "./DigitalProductWebsite.png";
 import realestateWebsite1 from "./realEstate.png";
 // CV
-import CV from "./mamunsCV.pdf";
+import CV from "./PERN&MERN.pdf";
 export const assets = {
   myPhoto,
   backGround,
@@ -43,12 +43,15 @@ export const aboutInfo = [
 export const projectData = [
   {
     id: 1,
-    name: "It Firm Website",
+    name: "Event Circle",
     description:
-      "Website for IT firm built with React, React-Router-Dom, Node.js, and MongoDB for seamless navigation and data management.JWT Authentication for secure Admin access",
+      "A fullstack secure Next.js application with relational database PostgreSQL, where payment system integrates SSL Commerz with a role-based login system.",
     imageUrl: itFrimWebsite,
-    liveLink: "https://www.zakeritsolutions.com/",
+    liveLink: "https://event-circle-frontend.vercel.app/",
     repoLink: "",
+    frontendRepo: "https://github.com/mamun-jsx/event-circle-next-js.git",
+    backendRepo: "https://github.com/mamun-jsx/circle-hub-backend.git",
+    type: "react",
   },
   {
     id: 2,
@@ -67,7 +70,9 @@ export const projectData = [
       "A car rental website built with react express and mongodb, Firebase for authentication, user can book a car and see their booking history. Owner can list car for rent. ROLE BASED LOGIN",
     imageUrl: carBookingProject,
     liveLink: "https://iridescent-crostata-2d702f.netlify.app/",
-    repoLink: "https://github.com/mamun-jsx/car-booking-project.git",
+    repoLink: "",
+    frontendRepo: "https://github.com/mamun-jsx/car-booking-project/tree/main/client",
+    backendRepo: "https://github.com/mamun-jsx/car-booking-project/tree/main/server",
     type: "react",
   },
   {
