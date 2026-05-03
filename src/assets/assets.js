@@ -5,17 +5,13 @@ import projectImage from "./projectImage.jpg";
 // car projects
 import itFrimWebsite from "./itFarmWebsite1.png";
 import carBookingProject from "./carBooking.png";
-import companyWebsite from "./cpmpanyProject.png";
 import aiPoweredBlog from "./AiPoweredBlog.png";
-import digitalProductWebsite from "./DigitalProductWebsite.png";
-import realestateWebsite1 from "./realEstate.png";
 // CV
 import CV from "./PERN&MERN.pdf";
 export const assets = {
   myPhoto,
   backGround,
   carBookingProject,
-  companyWebsite,
   CV,
 };
 
@@ -74,35 +70,5 @@ export const projectData = [
     frontendRepo: "https://github.com/mamun-jsx/car-booking-project/tree/main/client",
     backendRepo: "https://github.com/mamun-jsx/car-booking-project/tree/main/server",
     type: "react",
-  },
-  {
-    id: 4,
-    name: "Digital Product Website",
-    description:
-      "A website where admin sell digital product online such as microsoft office license, adobe license etc.Build with wordpress Woodmart theme.",
-    imageUrl: digitalProductWebsite,
-    liveLink: "https://licenciacad.com/",
-    repoLink: "",
-    type: "wordpress",
-  },
-  {
-    id: 5,
-    name: "Company Website",
-    description:
-      "Company service website built with wordpress CMS and also FUlL mobile responsive.",
-    imageUrl: companyWebsite,
-    liveLink: "https://nxatc.com/",
-    repoLink: "",
-    type: "mern",
-  },
-  {
-    id: 6,
-    name: "Real Estate Website",
-    description:
-      "A real estate website built with wordpress CMS, Company can list their property for sell or rent.",
-    imageUrl: realestateWebsite1,
-    liveLink: "https://braylonrealty.com/",
-    repoLink: "",
-    type: "wordpress",
   },
 ];

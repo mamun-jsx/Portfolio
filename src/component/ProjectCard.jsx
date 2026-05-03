@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { RiGitRepositoryPrivateFill } from "react-icons/ri";
-import { FaWordpress } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -30,7 +29,7 @@ const ProjectCard = ({ project }) => {
             </button>
           )}
 
-          {/* Repo Links / WordPress / Private */}
+          {/* Repo Links / Private */}
           <div className="flex flex-col sm:flex-row gap-3 mt-2 sm:mt-0 text-gray-400">
             {project?.frontendRepo && (
               <a
@@ -68,14 +67,7 @@ const ProjectCard = ({ project }) => {
               </a>
             )}
 
-            {!project?.frontendRepo && !project?.backendRepo && !project?.repoLink && project?.type === "wordpress" && (
-              <span className="flex items-center gap-2">
-                <FaWordpress className="text-xl text-accent" />
-                WordPress Project
-              </span>
-            )}
-
-            {!project?.frontendRepo && !project?.backendRepo && !project?.repoLink && project?.type !== "wordpress" && (
+            {!project?.frontendRepo && !project?.backendRepo && !project?.repoLink && (
               <span className="flex items-center gap-2 text-gray-400">
                 <RiGitRepositoryPrivateFill className="text-xl text-accent" />
                 Private Repo
