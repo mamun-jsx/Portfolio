@@ -202,6 +202,78 @@ const Experiences = () => {
               </div>
             </div>
           </div>
+
+          {/* Left: Backend & Database Experience */}
+          <div className="bg-surface-bright/20 border border-white/5 p-8 md:p-12 rounded-3xl backdrop-blur-md">
+            <div className="flex justify-between items-start mb-6">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Backend & Database
+                </h3>
+                <p className="text-accent font-semibold">
+                  Mongodb | Mongoose | JWT | Firebase | Express js | Node js
+                </p>
+              </div>
+              <span className="text-gray-400 font-medium">2023 — Present</span>
+            </div>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+              Specialized in building scalable server-side applications and managing complex databases. 
+              Experienced in implementing secure authentication flows and real-time database management 
+              across diverse project environments.
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Architected robust RESTful APIs using Node.js and Express.js.</p>
+              </div>
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Designed and optimized NoSQL schemas with MongoDB and Mongoose.</p>
+              </div>
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Integrated secure authentication and hosting solutions with JWT and Firebase.</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: Systems & Modern Backend */}
+          <div className="bg-surface-bright/20 border border-white/5 p-8 md:p-12 rounded-3xl backdrop-blur-md">
+            <div className="flex justify-between items-start mb-6">
+              <div>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Systems & Modern Backend
+                </h3>
+                <p className="text-accent font-semibold">
+                  Go Language | Postgres | Express js | Typescript | Prisma
+                </p>
+              </div>
+              <span className="text-gray-400 font-medium whitespace-nowrap">2024 — Present</span>
+            </div>
+
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
+              Focused on high-performance backend systems and type-safe development. 
+              Building efficient microservices and robust data layers using modern 
+              programming languages and ORM technologies.
+            </p>
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Developed high-concurrency backend services using Go (Golang).</p>
+              </div>
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Implemented type-safe database schemas and queries using Prisma and Postgres.</p>
+              </div>
+              <div className="flex items-center gap-4 text-gray-300">
+                <div className="w-2 h-2 rounded-full bg-accent"></div>
+                <p>Architected scalable full-stack solutions with TypeScript and Express.js.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
