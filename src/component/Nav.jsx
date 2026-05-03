@@ -1,6 +1,5 @@
 import React from "react";
-import { FaUpwork } from "react-icons/fa6";
-import { TbBrandFiverr } from "react-icons/tb";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Nav = () => {
   return (
@@ -9,7 +8,7 @@ const Nav = () => {
         {/* Logo */}
         <div>
           <a href="#top" className="text-2xl font-bold text-white tracking-tight">
-            Developer <span className="text-accent">Mamun</span>
+            <span className="text-accent">Mamun</span>
           </a>
         </div>
 
@@ -59,26 +58,26 @@ const Nav = () => {
 
         {/* Right Section */}
         <div className="flex items-center gap-4">
-          {/* Upwork/Fiverr icons */}
+          {/* LinkedIn/WhatsApp icons */}
           <ul className="flex gap-3">
             <li>
               <a
-                href="https://www.upwork.com/freelancers/~0128c27e26d30e1643"
+                href="https://www.linkedin.com/in/mamun-jsx/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-accent transition text-2xl"
+                className="text-gray-400 hover:text-[#0A66C2] transition text-2xl"
               >
-                <FaUpwork />
+                <FaLinkedin />
               </a>
             </li>
             <li>
               <a
-                href="https://www.fiverr.com/free_mamun/"
+                href="https://api.whatsapp.com/message/WQSVX5CH3VGNC1?autoload=1&app_absent=0"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gray-400 hover:text-accent transition text-2xl"
+                className="text-gray-400 hover:text-[#25D366] transition text-2xl"
               >
-                <TbBrandFiverr />
+                <FaWhatsapp />
               </a>
             </li>
           </ul>

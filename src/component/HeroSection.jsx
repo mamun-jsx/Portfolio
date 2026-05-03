@@ -1,17 +1,17 @@
 import React from "react";
 import { assets } from "../assets/assets";
-import { FaNodeJs, FaReact, FaGithub } from "react-icons/fa";
+import { FaNodeJs, FaReact, FaGithub, FaPhoneAlt } from "react-icons/fa";
 import { SiGo, SiJsonwebtokens, SiTailwindcss } from "react-icons/si";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex flex-col justify-between hero-gradient overflow-hidden"
+      className="relative min-h-[75vh] flex flex-col justify-between hero-gradient overflow-hidden"
       data-purpose="hero-container"
     >
       {/* Hero Content Body */}
-      <div className="flex-grow flex items-center px-8 md:px-20 lg:px-32 py-12 relative z-10 pt-24 md:pt-32">
+      <div className="flex-grow flex items-center px-8 md:px-20 lg:px-32 py-8 relative z-10 pt-20 md:pt-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto">
           {/* Left Content: Typography and CTA */}
           <div
@@ -36,10 +36,11 @@ const HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-6 pt-10">
               <button
-                onClick={() => window.open("https://www.fiverr.com/free_mamun", "_blank")}
-                className="px-10 py-5 bg-accent text-white font-bold hover:opacity-90 transition-all duration-300 text-center min-w-[200px]"
+                onClick={() => window.open("tel:01540194688", "_self")}
+                className="px-10 py-5 bg-accent text-white font-bold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-3 min-w-[200px]"
                 data-purpose="cta-primary"
               >
+                <FaPhoneAlt className="text-xl" />
                 Got a project?
               </button>
               <button

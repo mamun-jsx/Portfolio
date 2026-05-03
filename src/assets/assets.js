@@ -89,7 +89,7 @@ export const projectData = [
     id: 5,
     name: "Company Website",
     description:
-      "Company service website built with wordpress CMS and also FUlL mobile responsive Fiverr project",
+      "Company service website built with wordpress CMS and also FUlL mobile responsive.",
     imageUrl: companyWebsite,
     liveLink: "https://nxatc.com/",
     repoLink: "",
@@ -99,7 +99,7 @@ export const projectData = [
     id: 6,
     name: "Real Estate Website",
     description:
-      "A real estate website built with wordpress CMS, Company can list their property for sell or rent.Fiverr project",
+      "A real estate website built with wordpress CMS, Company can list their property for sell or rent.",
     imageUrl: realestateWebsite1,
     liveLink: "https://braylonrealty.com/",
     repoLink: "",

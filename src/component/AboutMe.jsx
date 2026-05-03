@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center p-8 md:p-16 lg:p-24" id="about">
+    <section className="min-h-[70vh] flex items-center justify-center p-8 md:p-12 lg:p-16" id="about">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full" data-purpose="about-me-container">
         
         {/* LeftColumn (Skills/Services) */}
@@ -63,7 +63,7 @@ const AboutMe = () => {
         <div className="lg:col-span-7 space-y-10 mt-12 lg:mt-0" data-purpose="about-biography">
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6">About me</h1>
           <p className="text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl">
-            My web development journey began in 2021 with WordPress, where I successfully collaborated with international clients on Fiverr. Seeking more flexibility and control over my projects, I transitioned to modern frameworks, mastering technologies like React, Next.js, Express.js, and Node.js to build robust, scalable applications.
+            My web development journey is fueled by a passion for building interactive and user-friendly digital experiences. Since 2022, I have been deeply immersed in modern frameworks, mastering technologies like React, Next.js, Express.js, and Node.js to build robust, scalable, and high-performance applications that solve real-world problems.
           </p>
           
           {/* Statistics */}

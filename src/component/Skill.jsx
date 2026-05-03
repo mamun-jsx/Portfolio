@@ -78,7 +78,7 @@ const Skill = () => {
   return (
     <section
       id="skill"
-      className="my-12 py-20 rounded px-4 md:px-10 bg-surface-bright/20 border-y border-white/5"
+      className="my-8 py-12 rounded px-4 md:px-10 bg-surface-bright/20 border-y border-white/5"
     >
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-extrabold mb-6 text-white tracking-tight">

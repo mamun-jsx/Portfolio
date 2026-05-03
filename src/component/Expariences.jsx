@@ -95,7 +95,7 @@ const Experiences = () => {
   return (
     <section
       id="experience"
-      className="relative py-24 overflow-hidden bg-surface"
+      className="relative py-16 overflow-hidden bg-surface"
     >
       {/* Floating Background Icons */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
@@ -121,44 +121,44 @@ const Experiences = () => {
             Professional Journey
           </h2>
           <h1 className="text-3xl md:text-6xl font-extrabold text-white">
-            My Experience from 2021 to Present
+            My Experience from 2022 to Present
           </h1>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left: Fiverr Experience */}
+          {/* Left: Hands-on Experience */}
           <div className="bg-surface-bright/20 border border-white/5 p-8 md:p-12 rounded-3xl backdrop-blur-md">
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Freelance Developer
+                  My Hands-on Experience
                 </h3>
                 <p className="text-accent font-semibold">
-                  International Projects (Fiverr)
+                  React.js & Next.js Development | Express js
                 </p>
               </div>
-              <span className="text-gray-400 font-medium">2021 — Present</span>
+              <span className="text-gray-400 font-medium">2022 — 2024</span>
             </div>
 
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              During my freelancing career, I've collaborated with diverse
-              international clients to translate complex visions into scalable
-              business models. I specialize in building high-performing websites
-              that drive real-world impact.
+              Extensive hands-on experience in architecting and developing modern 
+              web applications using React.js and Next.js. I focus on creating 
+              highly interactive, scalable, and user-centric digital solutions 
+              with a deep understanding of the modern web ecosystem.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-gray-300">
                 <div className="w-2 h-2 rounded-full bg-accent"></div>
-                <p>Worked with agencies, e-commerce, and non-profits.</p>
+                <p>Developed many React.js and Next.js applications.</p>
               </div>
               <div className="flex items-center gap-4 text-gray-300">
                 <div className="w-2 h-2 rounded-full bg-accent"></div>
-                <p>Maintained a consistent 5-star review record.</p>
+                <p>Focused on responsiveness and Security.</p>
               </div>
               <div className="flex items-center gap-4 text-gray-300">
                 <div className="w-2 h-2 rounded-full bg-accent"></div>
-                <p>Converted business ideas into functional digital assets.</p>
+                <p>Implemented complex UI patterns and seamless user interactions.</p>
               </div>
             </div>
           </div>
