@@ -295,7 +295,7 @@ const Experiences = () => {
                 <FaGraduationCap />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">
-                Bachelor of Arts in English
+                Bachelor of Arts in English <br /> (BA)
               </h3>
               <p className="text-accent font-semibold mb-4">
                 Daffodil International University
