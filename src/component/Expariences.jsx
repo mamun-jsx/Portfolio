@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaDocker, FaNodeJs } from "react-icons/fa";
+import { FaGithub, FaDocker, FaNodeJs, FaGraduationCap } from "react-icons/fa";
+
 import {
   SiMongoose,
   SiGo,
@@ -275,7 +276,73 @@ const Experiences = () => {
             </div>
           </div>
         </div>
+
+        {/* Education Section */}
+        <div className="mt-24">
+          <div className="text-center mb-12">
+            <h2 className="text-accent text-lg font-bold uppercase tracking-widest mb-2">
+              Academic Foundation
+            </h2>
+            <h1 className="text-3xl md:text-5xl font-extrabold text-white">
+              Education
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Bachelor Degree */}
+            <div className="bg-surface-bright/20 border border-white/5 p-8 rounded-3xl backdrop-blur-md hover:border-accent/30 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <FaGraduationCap />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">
+                Bachelor of Arts in English
+              </h3>
+              <p className="text-accent font-semibold mb-4">
+                Daffodil International University
+              </p>
+              <div className="flex justify-between items-center text-gray-400 text-sm">
+                <span>Savar, Dhaka</span>
+                <span className="bg-white/5 px-3 py-1 rounded-full text-accent font-medium">2024</span>
+              </div>
+            </div>
+
+            {/* HSC */}
+            <div className="bg-surface-bright/20 border border-white/5 p-8 rounded-3xl backdrop-blur-md hover:border-accent/30 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <FaGraduationCap />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">
+                Higher Secondary Certificate (HSC)
+              </h3>
+              <p className="text-accent font-semibold mb-4">
+                Notre Dame College
+              </p>
+              <div className="flex justify-between items-center text-gray-400 text-sm">
+                <span>Dhaka</span>
+                <span className="bg-white/5 px-3 py-1 rounded-full text-accent font-medium">2019</span>
+              </div>
+            </div>
+
+            {/* SSC */}
+            <div className="bg-surface-bright/20 border border-white/5 p-8 rounded-3xl backdrop-blur-md hover:border-accent/30 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                <FaGraduationCap />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">
+                Secondary School Certificate (SSC)
+              </h3>
+              <p className="text-accent font-semibold mb-4">
+                Kamarjury Yousuf Ali High School
+              </p>
+              <div className="flex justify-between items-center text-gray-400 text-sm">
+                <span>Gazipur, Dhaka</span>
+                <span className="bg-white/5 px-3 py-1 rounded-full text-accent font-medium">2017</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
   );
 };
