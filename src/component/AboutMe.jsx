@@ -160,7 +160,7 @@ const AboutMe = () => {
             {/* Stat 3 */}
             <div className="space-y-2">
               <div className="text-4xl md:text-5xl font-extrabold flex items-center gap-1">
-                <span>5+</span>
+                <span>5</span>
                 <span className="text-accent">+</span>
               </div>
               <p className="text-gray-500 uppercase tracking-wider text-sm font-semibold">
